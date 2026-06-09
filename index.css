@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-rosegold-50: #fdf5f6;
+  --color-rosegold-100: #fae8eb;
+  --color-rosegold-200: #f4d1d7;
+  --color-rosegold-300: #eeb1bb;
+  --color-rosegold-400: #e28595;
+  --color-rosegold-500: #b76e79;
+  --color-rosegold-600: #9e5b65;
+  --color-rosegold-700: #854a53;
+  --color-rosegold-800: #6f4048;
+  --color-rosegold-900: #5d383e;
+
+  --color-surface: #ffffff;
+  --color-surface-dim: #f9f9f9;
+  --color-text-main: #2d3748;
+  --color-text-muted: #718096;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-surface text-text-main antialiased selection:bg-rosegold-200 selection:text-rosegold-900;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-white/80 backdrop-blur-md border border-white/50 shadow-sm transition-all duration-300;
+  }
+  .glass-panel:hover {
+    @apply shadow-md border-rosegold-200;
+  }
+}
