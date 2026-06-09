@@ -3,16 +3,15 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-import { useState } from 'react';
-import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
-import { MenuSection } from './components/Menu';
-import { GallerySection } from './components/GallerySection';
-import { CommunitySection } from './components/CommunitySection';
-import { ContactSection, Footer } from './components/ContactSection';
-import { BookingModal, FeedbackModal } from './components/Modals';
-import { Calendar } from 'lucide-react';
-import { AnimatePresence } from 'motion/react';
+const Navbar = () => null;
+const Hero = () => null;
+const MenuSection = () => null;
+const GallerySection = () => null;
+const CommunitySection = () => null;
+const ContactSection = () => null;
+const Footer = () => null;
+const BookingModal = () => null;
+const FeedbackModal = () => null;
 
 export default function App() {
   const [isBookingOpen, setIsBookingOpen] = useState(false);
